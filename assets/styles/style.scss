@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      max-width: 1440px;
+  }
+
+  main {
+      display: flex;
+  }
+
+  .left_block {
+      padding: 0 20px;
+  }
+
+  .nav_bar {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+    .nav_bar--title {
+        font-size: 20px;
+        line-height: 23px;
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0px 65px 0px 25px;
+    }
+
+    .nav_bar_menu {
+        width: 77%;
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+
+  .container {
+      padding: 5px 0px 10px 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 216px;
+      
+      &.tools, &.colors {
+        margin: 80px 0px 90px 2%;
+      }
+
+      .container_list {
+        list-style: none;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.541327);
+
+        .container_list--item {
+            width: 196px;
+            height: 48px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container_list--image {
+            margin-right: 33px;
+        }
+
+        hr {
+            border-color: rgba(0, 0, 0, 0.12);
+            margin: 0px 1px 0px -9px;
+        }
+      }
+  }
+
+  .container_list--circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      border: 1px solid #000000;
+      margin-right: 18px;
+
+      &.second {
+        background-color: #41F795;
+      }
+
+      &.third {
+        background-color: #F74141;
+      }
+
+      &.fourth {
+        background-color: #41B6F7;
+      }
+  }
+
+  .canvas_box {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex: 1;
+      padding: 80px 0px 0px 60px;
+
+      .canvas {
+          width: 512px;
+          height: 512px;
+          background-color: coral;
+      }
+  }
+
+  .canvas_switcher {
+      cursor: pointer;
+  }
