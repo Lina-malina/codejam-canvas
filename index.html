@@ -70,16 +70,18 @@
             </div>
         </div>
         <div class="canvas_box">
-            <canvas class="canvas" id="canvas"></canvas>
+            <canvas id="canvas" width="512" height="512"></canvas>
             <div class="canvas_switcher container">
                 <ul class="container_list">
-                    <li class="container_list--item">4*4</li>
-                    <li class="container_list--item">32*32</li>
+                    <li class="container_list--item" onclick="draw4SizeArray(arr4)">4*4</li>
+                    <li class="container_list--item" onclick="draw32SizeArray(arr32)">32*32</li>
                     <li class="container_list--item">image</li>
                 </ul>
             </div>
         </div>
     </main>
+    <script type="text/javascript" src="./assets/scripts/array32.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
