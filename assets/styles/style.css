@@ -144,4 +144,8 @@ main {
 .canvas_switcher {
   cursor: pointer;
 }
+
+.image {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

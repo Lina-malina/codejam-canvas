@@ -1,3 +1,4 @@
+let image = document.querySelector('.rss_image');
 let canvas = document.getElementById('canvas');
 var ctx = canvas.getContext("2d");
 
@@ -33,3 +34,7 @@ function draw32SizeArray(array) {
     }
 }
 
+function drawImage () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, 0, 0, 512, 512);
+}
