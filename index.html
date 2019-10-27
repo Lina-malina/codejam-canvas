@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codejam canvas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav_bar">
+            <img src="./assets/images/nav icon.png" alt="nav icon" class="nav_bar--icon">
+            <h2 class="nav_bar--title">CodeJam - Pallete</h2>
+            <div class="nav_bar_menu">
+                <img src="./assets/images/menu icon.png" alt="menu icon" class="nav_bar_menu--icon">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left_block">
+            <div class="container tools">
+                <ul class="container_list">
+                    <li class="container_list--item">
+                        <img src="./assets/images/icon-bucket.png" alt="" class="container_list--image">
+                        <div>Paint bucket</div>
+                    </li>
+                    <li class="container_list--item">
+                        <img src="./assets/images/icon-choose.png" alt="" class="container_list--image">
+                        Choose color
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li class="container_list--item">
+                        <img src="./assets/images/icon-move.png" alt="" class="container_list--image">
+                        Move
+                    </li>
+                    <li class="container_list--item">
+                        <img src="./assets/images/icon-transform.png" alt="" class="container_list--image">
+                        Transform
+                    </li>
+                </ul>
+            </div>
+            <div class="container colors">
+                <ul class="container_list">
+                    <li class="container_list--item">
+                        <span class="container_list--circle first"></span>
+                        Current color
+                    </li>
+                    <li class="container_list--item">
+                        <span class="container_list--circle second"></span>
+                        Prev color
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li class="container_list--item">
+                        <span class="container_list--circle third"></span>
+                        red
+                    </li>
+                    <li class="container_list--item">
+                        <span class="container_list--circle fourth"></span>
+                        blue
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./assets/images/image.png" alt="rss image" class="rss_image">
+        </div>
+        <div class="canvas_box">
+            <canvas id="canvas" width="512" height="512"></canvas>
+            <div class="canvas_switcher container">
+                <ul class="container_list">
+                    <li class="container_list--item" onclick="draw4SizeArray(arr4)">4*4</li>
+                    <li class="container_list--item" onclick="draw32SizeArray(arr32)">32*32</li>
+                    <li class="container_list--item" onclick="drawImage()">image</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./assets/scripts/array32.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
