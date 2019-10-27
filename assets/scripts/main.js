@@ -1,6 +1,6 @@
-let image = document.querySelector('.rss_image');
-let canvas = document.getElementById('canvas');
-var ctx = canvas.getContext("2d");
+const image = document.querySelector('.rss_image');
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext("2d");
 
 let arr4 = [
     ["00BCD4", "FFEB3B","FFEB3B","00BCD4"],
